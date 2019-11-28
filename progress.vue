@@ -133,3 +133,10 @@ export default {
   }
 }
 </script>
+
+
+<el-progress  v-if='!stationInfo.isPercentage' 
+type='circle' :color='color' 
+:percentage="Number(stationInfo.chargePercentage)"
+:text='text' :stroke-width='16'  :width='160'>
+</el-progress>
